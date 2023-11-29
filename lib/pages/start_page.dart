@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:house_flutter_app/pages/home_page.dart';
 
 class StartPage extends StatelessWidget {
   const StartPage({super.key});
@@ -42,10 +41,7 @@ class StartPage extends StatelessWidget {
                 //button Enter
                 GestureDetector(
                   onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const HomePage()));
+                    Navigator.pushNamed(context, '/homepage');
                   },
                   child: Container(
                       height: 57,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:house_flutter_app/pages/home_page.dart';
+import 'package:house_flutter_app/pages/house_page.dart';
 import 'pages/start_page.dart';
 
 void main() {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'House App',
       home: const StartPage(),
       theme: ThemeData(primarySwatch: Colors.grey),
-      routes: {'/homepage': (context) => const HomePage()},
+      routes: {'/homepage': (context) => const HousePage()},
     );
   }
 }
